@@ -1,0 +1,648 @@
+/* From Eric Meyer's CSS reset */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, p, a, img, center, ul, li, form {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+/* --- */
+
+html {
+	background-color: #E8F7F0;
+}
+.logo {
+	display: inline-block;
+	width: 3em;
+	margin: 0.75em 0.25em 0 0.75em;
+}
+h1 {
+	display: inline-block;
+	position: relative;
+	font-family: 'Open Sans';
+	font-size: 1.25em;
+	color: #050B04;
+	bottom: 0.85em;
+}
+#lighter {
+	color: #505050;
+}
+#lightest {
+	color: #656565;
+}
+#signup {
+	display: none;
+}
+.banner {
+	position: relative;
+	width: 100%;
+	margin: 1em 0 0 0;
+}
+img {
+	width: 100%;
+}
+h2 {
+	display: block;
+	position: absolute;
+	top: 0.5em;
+	padding: 0.5em 1em;
+	font-family: 'Lato';
+	font-weight: 700;
+	font-size: 1.1em;
+	font-weight: 700;
+	line-height: 120%;
+	letter-spacing: 0.35px;
+	color: #BEE9CF;
+	background: rgba(0, 0, 0, 0.65);
+}
+#thin {
+	font-weight: 300;
+	color: #F7F7F7;
+	letter-spacing: normal;
+}
+ul {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+.icon {
+	width: 6em;
+	margin-top: 3em;
+}
+h3 {
+	margin: 0.5em auto 0.3em auto;
+	font-family: 'Open Sans';
+	font-weight: 300;
+	font-size: 1.75em;
+	line-height: 1.2;
+	color: #050B04;
+}
+p {
+	font-family: 'Open Sans';
+	font-size: 1em;
+	line-height: 1.4;
+	color: #050B04;
+}
+#sage {
+	height: 13.25em;
+	margin-top: 2.5em;
+	background-image: url('sage.jpg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+h4 {
+	display: block;
+	position: absolute;
+	top: 0.6em;
+	padding: 0.25em 0.5em 0.25em 0.85em;
+	font-family: 'Lato';
+	font-size: 1.25em;
+	font-weight: 300;
+	color: #BEE9CF;
+	background: rgba(0, 0, 0, 0.5);
+}
+#sage-text {
+	position: absolute;
+	top: 3.4em;
+	padding: 0.25em 0.25em 0.25em 1.25em;
+	font-family: 'Lato';
+	font-weight: 300;
+	font-size: 0.9em;
+	letter-spacing: 0.35px;
+	color: #F7F7F7;
+	background: rgba(0, 0, 0, 0.5);
+}
+form {
+	position: absolute;
+	top: 6.4em;
+	left: 1em;
+}
+input {
+	display: block;
+	width: 14em;
+	font-size: 0.7em;
+	margin-bottom: 0.65em;
+	padding: 0.75em 0.75em 0.75em 1em;
+	border-radius: 10px;
+	border: none;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+input:focus {
+	outline: none;
+}
+#submit {
+	-webkit-appearance: none;
+	width: 6em;
+	margin: 0 auto;
+	padding: 0.5em;
+	border-radius: 10px;
+	background-color: #206059;
+	font-family: 'Open Sans';
+	color: #F7F7F7;
+	border: none;
+	cursor: pointer;
+}
+#submit:hover {
+	background-color: #1B504C;
+}
+#facebook {
+	position: absolute;
+	top: 9.85em;
+	left: 12.8em;
+	width: 3em;
+	opacity: 0.8;
+}
+#facebook:hover {
+	opacity: 1;
+}
+#twitter {
+	position: absolute;
+	top: 9.85em;
+	left: 16.3em;
+	width: 3em;
+	opacity: 0.8;
+}
+#twitter:hover {
+	opacity: 1;
+}
+.video {
+	position: relative;
+	width: 80%;
+	margin: 1.9em auto 0 auto;
+	padding-bottom: 45%;
+}
+iframe {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+#donate {
+	display: block;
+	width: 11em;
+	margin: 1.5em auto 3em auto;
+	padding: 0.6em;
+	border-radius: 10px;
+	background-color: #E00404;
+	font-family: 'Open Sans';
+	font-size: 1.1em;
+	letter-spacing: 0.4px;
+	text-decoration: none;
+	text-align: center;
+	color: #F7F7F7;
+}
+#donate:hover {
+	background-color: #B90404;
+}
+
+/* Media queries */
+
+@media (min-width: 28em) {
+	.logo {
+		width: 3.5em;
+		margin: 0.85em 0.35em 0 0.85em;
+	}
+	h1 {
+		font-size: 1.3em;
+		bottom: 0.9em;
+	}
+	#signup {
+		display: inline-block;
+		float: right;
+		position: relative;
+		top: 1.7em;
+		right: 1.75em;
+		width: 4.25em;
+		padding: 0.5em;
+		border-radius: 10px;
+		background-color: #206059;
+		font-family: 'Open Sans';
+		font-size: 1.15em;
+		text-decoration: none;
+		text-align: center;
+		color: #F7F7F7;
+		cursor: pointer;
+	}
+	#signup:hover {
+		background-color: #1B504C;
+	}
+	h2 {
+		padding: 0.6em 2em;
+		font-size: 1.35em;
+		line-height: 145%;
+	}
+	#sage {
+		height: 15.5em;
+	}
+	h4 {
+		top: 0.8em;
+		padding: 0.25em 0.5em 0.25em 2em;
+		font-size: 1.35em;
+	}
+	#sage-text {
+		top: 3.8em;
+		padding: 0.25em 0.25em 0.25em 2.9em;
+		font-size: 0.95em;
+	}
+	form {
+		top: 8em;
+		left: 2.7em;
+	}
+	input {
+		width: 16em;
+		margin-bottom: 0.7em;
+		padding: 0.8em 0.8em 0.8em 1em;
+	}
+	#submit {
+		width: 6em;
+		margin: 0 auto;
+		padding: 0.65em;
+	}
+	#facebook {
+		top: 11.35em;
+		left: 17em;
+		width: 3.5em;
+	}
+	#twitter {
+		top: 11.35em;
+		left: 21.25em;
+		width: 3.5em;
+	}
+}
+
+@media (min-width: 38em) {
+	.logo {
+		width: 4em;
+		margin: 1.2em 0.35em 0 4em;
+	}
+	h1 {
+		font-size: 1.5em;
+		bottom: 1em;
+	}
+	#signup {
+		top: 2.3em;
+		right: 4.5em;
+		width: 4.25em;
+		padding: 0.5em;
+		font-size: 1.15em;
+	}
+	.banner {
+		width: 90%;
+		margin: 1em auto 0 auto;
+		overflow: hidden;
+		border-radius: 10px;
+	}
+	h2 {
+		top: 0.95em;
+		padding: 0.7em 2em;
+		font-size: 1.45em;
+		line-height: 155%;
+	}
+	ul {
+		width: 70%;
+	}
+	#sage {
+		height: 16.5em;
+	}
+	h4 {
+		top: 0.8em;
+		padding: 0.35em 0.5em 0.35em 2em;
+		font-size: 1.45em;
+	}
+	#sage-text {
+		top: 4.05em;
+		padding: 0.35em 0.5em 0.35em 2.95em;
+		font-size: 1em;
+	}
+	form {
+		top: 7.5em;
+		left: 2.9em;
+	}
+	input {
+		width: 19em;
+		margin-bottom: 0.85em;
+		padding: 1em;
+	}
+	#submit {
+		width: 7em;
+		margin: 0 auto;
+		padding: 0.7em;
+	}
+	#facebook {
+		top: 11.8em;
+		left: 21em;
+		width: 3.5em;
+	}
+	#twitter {
+		top: 11.8em;
+		left: 25.25em;
+		width: 3.5em;
+	}
+}
+
+@media (min-width: 48em) {
+	.logo {
+		width: 5em;
+		margin: 1.5em 0.45em 0 6em;
+	}
+	h1 {
+		font-size: 1.65em;
+		bottom: 1.15em;
+	}
+	#signup {
+		top: 3.2em;
+		right: 6em;
+		width: 4.25em;
+		padding: 0.5em;
+		font-size: 1.15em;
+	}
+	.banner {
+		width: 85%;
+		margin: 1.5em auto 0 auto;
+	}
+	h2 {
+		top: 0.95em;
+		padding: 0.7em 2.4em;
+		font-size: 1.7em;
+		line-height: 165%;
+	}
+	ul {
+		width: 100%;
+	}
+	li {
+		display: inline-block;
+		width: 19.5em;
+		margin: 1.5em 2em;
+	}
+	#sage {
+		height: 20em;
+	}
+	h4 {
+		top: 1em;
+		padding: 0.4em 0.5em 0.4em 2.6em;
+		font-size: 1.55em;
+	}
+	#sage-text {
+		top: 4.3em;
+		padding: 0.4em 0.5em 0.4em 3.7em;
+		font-size: 1.1em;
+	}
+	form {
+		top: 9em;
+		left: 3.95em;
+	}
+	input {
+		width: 25em;
+		margin-bottom: 0.95em;
+		padding: 1.2em;
+	}
+	#submit {
+		width: 8em;
+		margin: 0 auto;
+		padding: 0.8em;
+		font-size: 0.8em;
+	}
+	#facebook {
+		top: 14.1em;
+		left: 28em;
+		width: 4em;
+	}
+	#twitter {
+		top: 14.1em;
+		left: 33em;
+		width: 4em;
+	}
+	.video {
+		width: 60%;
+		margin: 3em auto 0 auto;
+		padding-bottom: 34%;
+	}
+	#donate {
+		width: 11em;
+		margin: 2.6em auto 4em auto;
+		padding: 0.7em;
+		font-size: 1.1em;
+	}
+}
+
+@media (min-width: 58em) {
+	.logo {
+		width: 5.5em;
+		margin: 1.6em 0.45em 0 8em;
+	}
+	h1 {
+		font-size: 1.75em;
+		bottom: 1.2em;
+	}
+	#signup {
+		top: 3.2em;
+		right: 7em;
+		width: 4.25em;
+		padding: 0.65em;
+		font-size: 1.2em;
+	}
+	.banner {
+		width: 80%;
+		margin: 1.9em auto 0 auto;
+	}
+	h2 {
+		top: 0.95em;
+		padding: 0.7em 2.4em;
+		font-size: 1.8em;
+		line-height: 170%;
+	}
+	#sage {
+		height: 23em;
+	}
+	h4 {
+		top: 1.35em;
+		padding: 0.4em 0.5em 0.4em 2.4em;
+		font-size: 1.8em;
+	}
+	#sage-text {
+		top: 4.7em;
+		padding: 0.4em 0.5em 0.4em 3.25em;
+		font-size: 1.35em;
+	}
+	form {
+		top: 11em;
+		left: 4.25em;
+	}
+	input {
+		width: 27em;
+		margin-bottom: 1em;
+		padding: 1.3em;
+	}
+	#submit {
+		width: 9em;
+		margin: 0 auto;
+		padding: 0.9em;
+	}
+	#facebook {
+		top: 15.75em;
+		left: 30em;
+		width: 5em;
+	}
+	#twitter {
+		top: 15.75em;
+		left: 36.5em;
+		width: 5em;
+	}
+	.video {
+		width: 60%;
+		margin: 3em auto 0 auto;
+		padding-bottom: 34%;
+	}
+	#donate {
+		width: 13em;
+		margin: 2.4em auto 4em auto;
+		padding: 0.8em;
+		font-size: 1.25em;
+	}
+}
+
+@media (min-width: 70em) {
+	.logo {
+		width: 6em;
+		margin: 1.8em 0.5em 0 9.5em;
+	}
+	h1 {
+		font-size: 1.9em;
+		bottom: 1.3em;
+	}
+	#signup {
+		top: 2.8em;
+		right: 8em;
+		width: 4.4em;
+		padding: 0.7em;
+		font-size: 1.35em;
+	}
+	.banner {
+		width: 80%;
+		margin: 2.1em auto 0 auto;
+	}
+	h2 {
+		top: 1.05em;
+		padding: 0.85em 3.2em;
+		font-size: 2em;
+		line-height: 180%;
+	}
+	.icon {
+		width: 7em;
+		margin-top: 3em;
+	}
+	#sage {
+		height: 25.5em;
+	}
+	h4 {
+		top: 1.35em;
+		padding: 0.4em 0.5em 0.4em 3.35em;
+		font-size: 1.9em;
+	}
+	#sage-text {
+		top: 4.7em;
+		padding: 0.4em 0.5em 0.4em 4.6em;
+		font-size: 1.4em;
+	}
+	form {
+		top: 11.6em;
+		left: 6.4em;
+	}
+	input {
+		width: 27em;
+		margin-bottom: 1em;
+		padding: 1.3em;
+		font-size: 0.8em;
+	}
+	#submit {
+		width: 9em;
+		margin: 0 auto;
+		padding: 0.9em;
+		font-size: 0.9em;
+	}
+	#facebook {
+		top: 17.85em;
+		left: 36em;
+		width: 5em;
+	}
+	#twitter {
+		top: 17.85em;
+		left: 42.5em;
+		width: 5em;
+	}
+	.video {
+		width: 50%;
+		margin: 3em auto 0 auto;
+		padding-bottom: 28%;
+	}
+	#donate {
+		width: 13em;
+		margin: 2.4em auto 4em auto;
+		padding: 0.8em;
+		font-size: 1.25em;
+	}
+}
+
+@media (min-width: 80em) {
+	.logo {
+		width: 6em;
+		margin: 1.8em 0.5em 0 11em;
+	}
+	h1 {
+		font-size: 1.9em;
+		bottom: 1.3em;
+	}
+	#signup {
+		top: 2.85em;
+		right: 9.5em;
+		width: 4.4em;
+		padding: 0.7em;
+		font-size: 1.35em;
+	}
+	.banner {
+		width: 75%;
+		margin: 2.1em auto 0 auto;
+	}
+	h2 {
+		top: 1.05em;
+		padding: 0.85em 3.5em;
+		font-size: 2.3em;
+		line-height: 180%;
+	}
+	#sage {
+		height: 26em;
+	}
+	h4 {
+		top: 1.35em;
+		padding: 0.4em 0.5em 0.4em 3.8em;
+		font-size: 2.1em;
+	}
+	#sage-text {
+		top: 4.9em;
+		padding: 0.4em 0.5em 0.4em 5.4em;
+		font-size: 1.5em;
+	}
+	form {
+		top: 13em;
+		left: 8em;
+	}
+	#facebook {
+		top: 19.1em;
+		left: 40em;
+		width: 5em;
+	}
+	#twitter {
+		top: 19.1em;
+		left: 46.5em;
+		width: 5em;
+	}
+}
